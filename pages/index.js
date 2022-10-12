@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from '../components/layout'
 import Heading from "../components/Heading";
+import Hero from "../components/Hero";
 const content = {
   animate: {
     transition: { staggerChildren: 0.1 },
@@ -47,7 +48,7 @@ export default function Home() {
               <motion.div
                 variants={title}
               >
-                <Heading />
+                <Hero />
               </motion.div>
             </motion.div>
           </motion.section>

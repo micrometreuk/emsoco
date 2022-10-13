@@ -13,7 +13,7 @@ const navigation = [
 
 export default function NavBar() {
   return (
-    <div className=" bg-gray-800 "
+    <div className=" bg-gray-800 dark:bg-gray-50 "
       style={{
         borderRadius: "3px",
         border: "1px solid black",
@@ -33,7 +33,7 @@ export default function NavBar() {
           <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
               <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
-                <div className="flex w-full text-white items-center justify-between md:w-auto">
+                <div className="flex w-full text-white dark:text-black  items-center justify-between md:w-auto">
                   <div className="-mr-2 flex items-center md:hidden">
                     <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                       <span className="sr-only">Open main menu</span>
@@ -44,7 +44,7 @@ export default function NavBar() {
               </div>
               <div className=" hidden md:ml-10 md:block md:space-x-8 md:pr-4">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="font-medium text-white hover:text-gray-900">
+                  <a key={item.name} href={item.href} className="font-medium text-awhite text-white dark:text-black hover:text-gray-900">
                     {item.name}
                   </a>
                 ))}

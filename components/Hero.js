@@ -29,7 +29,8 @@ const Hero = ({
   return (
     <div
     className="
-    mt-24
+    mt-16
+    pt-32
     bg-no-repeat bg-cover bg-center
 		bg-[url('../public/bg-sm.webp')]
 		xl:bg-[url('../public/bg.webp')]

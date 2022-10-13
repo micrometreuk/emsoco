@@ -15,16 +15,13 @@ export default function NavBar() {
   return (
     <div className=" bg-gray-800 dark:bg-gray-50 "
       style={{
-        borderRadius: "3px",
-        border: "1px solid black",
-        padding: "0.5em 1em",
         fontSize: "1.1em",
         zIndex: 1030,
         position: "fixed",
         top: 0,
         right: 0,
         left: 0,
-        marginTop: "0.1rem",
+        marginTop: "0.0rem",
       }}
     >
       <div className="mx-auto max-w-7xl">

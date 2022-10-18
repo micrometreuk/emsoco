@@ -44,7 +44,7 @@ const Hero = ({
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-white dark:text-white leading-normal">
                 <strong>
-                  We are helping hands whenever you are in trouble
+                  Welcome to Emso & Co Solicitors
                   </strong>.
               </h1>
               <ButtonPrimary>Contact us today</ButtonPrimary>

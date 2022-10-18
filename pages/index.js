@@ -1,8 +1,10 @@
-import { motion } from "framer-motion";
+import {  motion,  useTransform, useMotionValue} from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import Layout from '../components/layout'
 import Heading from "../components/Heading";
 import Hero from "../components/Hero";
 import Feature from "../components/Feature";
+import Moto from "../components/Moto/Moto";
 const content = {
   animate: {
     transition: { staggerChildren: 0.1 },
@@ -50,7 +52,7 @@ export default function Home() {
                 variants={title}
               >
                 <Hero />
-                <Feature />
+                <Moto />
               </motion.div>
             </motion.div>
           </motion.section>

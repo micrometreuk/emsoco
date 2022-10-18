@@ -1,4 +1,4 @@
-import {  motion,  useTransform, useMotionValue} from 'framer-motion';
+import {  motion,  useTransform, useMotionValue, MotionConfig} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Layout from '../components/layout'
 import Heading from "../components/Heading";
@@ -23,17 +23,8 @@ const title = {
   },
 };
 
-const inputs = {
-  initial: { y: -20, opacity: 0 },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.7,
-      ease: [0.6, -0.05, 0.01, 0.99],
-    },
-  },
-};
+
+
 
 export default function Home() {
   return (
@@ -52,7 +43,11 @@ export default function Home() {
                 variants={title}
               >
                 <Hero />
+                
+                <motion.div>
                 <Moto />
+                </motion.div>
+
               </motion.div>
             </motion.div>
           </motion.section>

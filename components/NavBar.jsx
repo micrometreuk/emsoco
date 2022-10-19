@@ -27,11 +27,22 @@ export default function NavBar() {
       <div className="mx-auto max-w-7xl">
 
         <Popover>
-          <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
+          <div className="relative px-4 pt-4 sm:px-6 lg:px-8">
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
               <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                 <div className="flex w-full text-white dark:text-black  items-center justify-between md:w-auto">
-                  <div className="-mr-2 flex items-center md:hidden">
+                  <a href="#">
+                    <span className="sr-only">Your Company</span>
+                    <Image
+                    className=" focus:ring-indigo-500"
+                      src="/logo2.webp"
+                      alt="logo"
+                      width={80}
+                      height={48}
+                      priority
+                    />
+                  </a>
+                  <div className="-ml-8 flex items-center md:hidden">
                     <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                       <span className="sr-only">Open main menu</span>
                       <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -47,7 +58,7 @@ export default function NavBar() {
                 ))}
 
               </div>
-<ThemeToggler/>
+              <ThemeToggler />
             </nav>
           </div>
 

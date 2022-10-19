@@ -31,7 +31,6 @@ export function App() {
       <Section>We are helping hands whenever you are in trouble</Section>
       <Section>We are by your side wherever you are</Section>
       <Section>We are truly Global</Section>
-      <Section>view!</Section>
     </>
   );
 }

@@ -5,6 +5,8 @@ import Heading from "../components/Heading";
 import Hero from "../components/Hero";
 import Feature from "../components/Feature";
 import Moto from "../components/Moto/Moto";
+import Pricing from '../components/Pricing';
+import Testimoni from '../components/Testimoni';
 const content = {
   animate: {
     transition: { staggerChildren: 0.1 },
@@ -45,7 +47,6 @@ export default function Home() {
                 <Hero />
                 
                 <motion.div>
-                <Moto />
                 </motion.div>
 
               </motion.div>

@@ -29,11 +29,12 @@ const Hero = ({
   return (
     <div
     className="
-    mt-16
-    pt-32
+    mt-0
+    pt-24
     bg-no-repeat bg-cover bg-center
 		bg-[url('../public/bg-sm.webp')]
 		xl:bg-[url('../public/bg.webp')]
+    h-100 max-h-full
     "
       id="about"
     >
@@ -67,7 +68,6 @@ const Hero = ({
             >
               <div className="flex mx-auto w-40 sm:w-auto">
                 <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
-                  <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">

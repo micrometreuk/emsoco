@@ -48,21 +48,15 @@ const Hero = ({
 
 
           }}>
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-white dark:text-white leading-normal">
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-cursif font-medium text-white dark:text-white">
               <strong
                 style={{
-                  backgroundSize: "cover",
-                  position: "relative",
-                  fontFamily: "Cursif, Cursif-BLKG",
-
-
                 }}
 
               >
                 Welcome to Emso and Co Solicitors
               </strong>.
             </h1>
-            <ButtonPrimary>Contact us today</ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>

@@ -6,10 +6,22 @@ module.exports = {
     ],
     darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+
+      fontFamily: {
+        cursif: ['Cursif'],
+        Cursif: ['Cursif', 'Cursif-BLKG.'],
+      },
+
+    },
   },
   plugins: [
     // ...
     require('@tailwindcss/aspect-ratio'),
   ],
+
+  corePlugins: {
+    fontFamily: true,
+  },
+
 }

@@ -1,4 +1,4 @@
-import {  motion,  useTransform, useMotionValue, MotionConfig} from 'framer-motion';
+import { motion, useTransform, useMotionValue, MotionConfig } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Layout from '../components/layout'
 import Heading from "../components/Heading";
@@ -45,7 +45,7 @@ export default function Home() {
                 variants={title}
               >
                 <Hero />
-                
+
                 <motion.div>
                 </motion.div>
 

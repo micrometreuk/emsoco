@@ -1,4 +1,8 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailowindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+
+
 module.exports = {
     content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -10,7 +14,8 @@ module.exports = {
 
       fontFamily: {
         cursif: ['Cursif'],
-        Cursif: ['Cursif', 'Cursif-BLKG.'],
+        sans: ['Oxygen', ...defaultTheme.fontFamily.sans]
+
       },
 
     },
@@ -18,6 +23,8 @@ module.exports = {
   plugins: [
     // ...
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography'),
+
   ],
 
   corePlugins: {

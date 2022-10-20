@@ -1,9 +1,11 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { motion } from "framer-motion";
+import ScrollAnimationWrapper from './ScrollAnimationWrapper';
+import getScrollAnimation from '../utils/getScrollAnimation';
+import React, { useState, useMemo } from "react";
 
-import React, { useState } from "react";
-function Index() {
+
+
+function Hero() {
   const [show, setShow] = useState(false);
   return (
     <div className="py-12 bg-gray-100 overflow-y-hidden">
@@ -20,7 +22,7 @@ function Index() {
           <div className="mt-8 relative rounded-lg  container mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64">
             <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-cursif font-bold italic leading-tight">Welcome</h1>
-              <br/>
+              <br />
 
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-cursif font-bold italic leading-tight">Emso and Co Solicitors</h1>
             </div>
@@ -40,4 +42,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Hero;

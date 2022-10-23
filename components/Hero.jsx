@@ -8,7 +8,7 @@ import React, { useState, useMemo } from "react";
 function Hero() {
   const [show, setShow] = useState(false);
   return (
-    <div className="py-12 bg-gray-100 overflow-y-hidden">
+    <div className="pt-12 bg-gray-900 overflow-y-hidden">
       {/* Code block starts */}
       <dh-component>
         <div className="w-full px-6
@@ -36,7 +36,6 @@ function Hero() {
           </div>
         </div>
       </dh-component>
-      {/* Code block ends */}
     </div>
 
   );

@@ -52,7 +52,7 @@ const Hero = ({
           
     pt-14
           ">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-cursif font-bold italic leading-tight">Welcome</h1>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-cursif font-bold italic leading-tight">Welcome to</h1>
             <br />
 
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-cursif font-bold italic leading-tight">Emso and Co Solicitors</h1>

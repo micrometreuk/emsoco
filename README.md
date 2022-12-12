@@ -13,4 +13,3 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-Check out demo site [Next.js](https://creative-starship-6bf2b1.netlify.app/) for more details.

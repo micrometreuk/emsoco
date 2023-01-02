@@ -103,8 +103,8 @@ export default function NavBar() {
                             </button>
 
                             {/* Logo */}
-                            <div className="ml-4 flex lg:ml-0 font-cursif font-extrabold	">
-                                <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
+                            <div className="ml-4 flex lg:ml-0  font-extrabold	">
+                                <span className=" bg-gray-200" aria-hidden="true" />
                                 <a href="#" className="flex items-center text-gray-700 hover:text-gray-800">
                                     <Image
                                         className=" focus:ring-indigo-500 h-8 w-auto"
@@ -137,7 +137,7 @@ export default function NavBar() {
                                 </div>
                             </Popover.Group>
 
-                            <span className=" p-1 m-1" aria-hidden="true">
+                            <span className="flex flex-1 justify-end">
 
                                 <ThemeToggler />
                             </span>

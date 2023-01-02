@@ -4,7 +4,7 @@ import About from "../components/About";
 export default function Home() {
   return (
     <Layout>
-      <Hero></Hero>
+      <Hero/>
     </Layout>
   );
 }

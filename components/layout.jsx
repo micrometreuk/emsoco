@@ -10,12 +10,15 @@ export default function Layout({ children }) {
       <Head>
       <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content={process.env.NEXT_PUBLIC_ENV_themeColor}/>
-        <meta property="og:locale" content={process.env.NEXT_PUBLIC_ENV_local}  />
-        <link rel="icon" href={process.env.NEXT_PUBLIC_ENV_logoUrl} />
-        <meta name="description"content={process.env.NEXT_PUBLIC_ENV_description}/>
-        <meta name="og:title" content={process.env.NEXT_PUBLIC_ENV_name}/>
-        <title> {process.env.NEXT_PUBLIC_ENV_title}</title>
+        <meta name="theme-color" content="#ffffff" />
+        <meta property="og:locale" content="en_UK" />
+        <link rel="icon" href={buildData.logoUrl} />
+        <meta name="description"content={buildData.description}/>
+        <meta name="og:title" content={buildData.domainName} />
+        <meta name="Emso And Co Solicitors"content={buildData.name}/>
+        <title>{buildData.name}</title>
+        <meta property="og:site_name" content={buildData.domainName} />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <NavBar />
       <main>{children}</main>

@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Parallax, Pagination, Navigation, Autoplay, Zoom } from "swiper";
 import Image from 'next/image'
 import Textra from 'react-textra'
-import AnimatedText from 'react-animated-text-content';
 
 
 
@@ -12,10 +11,13 @@ function Hero() {
   return (
     <div>
       <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10 pt-14">
-      <div className="flex flex-col justify-center items-center bg-cover bg-clip-text bg-center  text-transparent text-4xl sm:text-7xl font-extrabold tracking-wide antialiased" style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
-       We are helping hands whenever you are in trouble
-      </div>
         <br />
+        <h1 className="font text-4xl font-bold tracking-tight  text-gray-100 dark:text-gray-200 sm:text-6xl">
+        <Textra effect='scale' 
+       duration={3000}
+      
+      data={[' We are helping hands whenever you are in trouble', ]} />
+        </h1>
       </div>
       <div className="flex justify-center items-center">
       </div>
@@ -27,10 +29,13 @@ function Hero2() {
   return (
     <div>
       <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10 pt-14">
-       <div className="flex flex-col justify-center items-center bg-cover bg-clip-text bg-center  text-transparent text-4xl sm:text-7xl font-extrabold tracking-wide antialiased" style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
-      We are by your side wherever you are.
-      </div>
- <br />
+        <br />
+        <h1 className="font text-4xl font-bold tracking-tight  text-gray-100 dark:text-gray-200 sm:text-6xl">
+        <Textra effect='flash' 
+       duration={3000}
+      
+      data={['We are by your side wherever you are.', ]} />
+        </h1>
 
       </div>
       <div className="flex justify-center items-center">

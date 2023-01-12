@@ -138,8 +138,6 @@ export default function NavBar() {
                             </Popover.Group>
 
                             <span className="flex flex-1 justify-end">
-
-                                <ThemeToggler />
                             </span>
                         </div>
                     </div>

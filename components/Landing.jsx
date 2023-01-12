@@ -180,11 +180,11 @@ function Hero2() {
 
 
 
-export default function SwiperHero() {
+export default function Landing() {
   return (
     <div className="swiper-container">
       <div className="swiper-main">
-        <Swiper centeredSlides={true} spaceBetween={30} effect={"fade"} loop={true} zoom={{ maxRatio: 6 }} autoplay={{ delay: 3000, disableOnInteraction: false, }} speed={6000} pagination={{ clickable: true, }} navigation={true} modules={[EffectFade, Autoplay, Pagination, Navigation, Zoom]} className="mainSwiper"
+        <Swiper centeredSlides={true} spaceBetween={30} effect={"fade"} loop={true} zoom={{ maxRatio: 6 }} autoplay={{ delay: 3000, disableOnInteraction: false, }} speed={6000}  navigation={true} modules={[EffectFade, Autoplay, Pagination, Navigation, Zoom]} className="mainSwiper"
           style={{
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",

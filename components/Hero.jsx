@@ -28,40 +28,13 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div
-      className="
-    mt-0
-    pt-14
-    bg-no-repeat bg-cover bg-center
-		bg-[url('../public/bg-sm.webp')]
-		xl:bg-[url('../public/bg.webp')]
-    h-100 max-h-full
-    "
-      id="about"
-    >
-      <ScrollAnimationWrapper
-      
-      style={{
-        borderRadius: "3px",
-        backgroundColor: "hsla(290,60%,70%,0.1)"
-      }}
-      >
-        <motion.div
-          variants={scrollAnimation}>
-          <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10 
-          
-    pt-14
-          ">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white  font-bold italic leading-tight">Welcome to</h1>
-            <br />
-
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">Emso and Co Solicitors</h1>
+    <div className="mt-0 pt-14  relative w-full h-full bg-yellow-800 bg-opacity-10 ">
+      <ScrollAnimationWrapper>
+        <motion.div variants={scrollAnimation}>
+          <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10 pt-14">
           </div>
-                      <div className="flex justify-center items-center">
-              <button className="hover:bg-white hover:text-indigo-600 lg:text-xl hover:border-indigo-600 ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700 focus:ring-white hover:bg-indigo-700-800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm">Contact us today</button>
-            </div>
-        </motion.div>
-      </ScrollAnimationWrapper>
+          <div className="flex justify-center items-center">
+          </div>
       <div 
       style={{
         borderRadius: "3px",
@@ -70,7 +43,7 @@ const Hero = ({
       className="relative w-full flex"
       >
         <div 
-        className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 text-white z-10"
+        className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500  z-10"
           >
           {listUser.map((listUsers, index) => (
             <div
@@ -95,6 +68,8 @@ const Hero = ({
           ))}
         </div >
       </div>
+        </motion.div>
+      </ScrollAnimationWrapper>
     </div>
   );
 };

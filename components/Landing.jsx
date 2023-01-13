@@ -8,7 +8,7 @@ import { motion, Variants, HTMLMotionProps } from "framer-motion";
 export function HeroAnima1() {
   const [replay, setReplay] = useState(true);
   return (
-    <main>
+    <>
       <div className="flex flex-col justify-center items-center mt-16 bg-cover bg-clip-text bg-center text-transparent  font-extrabold tracking-wide antialiased text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center   font-bold italic leading-tight">
         Welcome to Emso and Co
@@ -19,45 +19,18 @@ export function HeroAnima1() {
       <div className="flex justify-center items-center">
         <button className="hover:bg-white hover:text-indigo-600 lg:text-xl hover:border-indigo-600 ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700 focus:ring-white hover:bg-indigo-700-800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm">Contact us today</button>
       </div>
-      <style jsx>{`
-    main{
-    }
-    .main-text{
-      font-family: "Lexend Deca", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-    }
-    `}</style>
-    </main>
+    </>
   );
 }
 
 
 export function HeroAnima2() {
-  const [replay, setReplay] = useState(true);
   return (
-    <main>
       <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent  font-extrabold tracking-wide antialiased text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center   font-bold italic leading-tight">
           We are helping hands whenever you are in trouble
         </h1>
       </div>
-      <style jsx>{`
-    main{
-    }
-    .main-text{
-      padding-top: 1rem;
-      font-family: "Lexend Deca", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-    }
-    `}</style>
-    </main>
   );
 }
 
@@ -66,15 +39,10 @@ function Hero2() {
   return (
     <div>
       <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent  font-extrabold tracking-wide antialiased text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
-        text-center text-white font-bold italic leading-tight"
-        >
-          <Textra effect='flash'
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
+          <Textra effect='flip'
             duration={3000}
-
-            data={['We are by your side wherever you are.',]} 
-             style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}
-            
+            data={['We are by your side',  'wherever you are.',]} 
             />
         </h1>
       </div>

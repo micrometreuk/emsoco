@@ -12,6 +12,7 @@ module.exports = {
       },
       animation: {
         'slide': 'slide 15s linear infinite',
+        'linethrough': 'linethrough 4s linear forwards',
       },
       keyframes: {
         slide: {
@@ -28,7 +29,21 @@ module.exports = {
             'margin-top': '0px'
           }
         },
+        linethrough: {
+         '100%': {
+         'transform': 'translateX(0)'
+          },
+        },
       },
+        fontFamily: {
+    'newsreader': ['Newsreader', 'cursive'],
+  },
+  fontSize: {
+    '10xl': ['12rem', { lineHeight: '1' }],
+  },
+  letterSpacing: {
+    extra: '0.5em',
+  },
 
     },
   },

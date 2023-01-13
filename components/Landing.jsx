@@ -40,9 +40,9 @@ function Hero2() {
     <div>
       <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent  font-extrabold tracking-wide antialiased text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
-          <Textra effect='flip'
+          <Textra effect='press'
             duration={3000}
-            data={['We are by your side',  'wherever you are.',]} 
+            data={['We are by your side wherever you are.',]} 
             />
         </h1>
       </div>

@@ -90,7 +90,7 @@ export default function NavBar() {
 
             <header className="relative bg-white ">
 
-                <nav aria-label="Top" className=" bg-white dark:bg-black mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <nav aria-label="Top" className=" bg-white  mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="border-b border-gray-200">
                         <div className="flex h-16 items-center">
                             <button

@@ -2,7 +2,6 @@ import React, { useMemo, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Parallax, Pagination, Navigation, Autoplay, Zoom } from "swiper";
 import Textra from 'react-textra'
-import { motion, Variants, HTMLMotionProps } from "framer-motion";
 
 
 export function HeroAnima1() {
@@ -26,10 +25,11 @@ export function HeroAnima1() {
 
 export function HeroAnima2() {
   return (
-      <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent  font-extrabold tracking-wide antialiased text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center   font-bold italic leading-tight">
-          We are helping hands whenever you are in trouble
-        </h1>
+      <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent  tracking-wide antialiased  " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
+        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center ">
+          We are helping hands 
+          whenever you are in trouble
+        </h3>
       </div>
   );
 }
@@ -38,7 +38,7 @@ export function HeroAnima2() {
 function Hero2() {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent  font-extrabold tracking-wide antialiased text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
+      <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent   tracking-wide antialiased  text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
           <Textra effect='press'
             duration={3000}

@@ -1,105 +1,84 @@
-import React, { useMemo } from "react";
-import Image from "next/image";
-import ButtonPrimary from "./ButtonPrimary";
-import { motion } from "framer-motion";
-import getScrollAnimation from "../utils/getScrollAnimation";
-import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
-
-const Hero = ({
-  listUser = [
-    {
-      name: "This phenomenally success rate reflects the hard-work, tenacity, experience and undeniable expertise of our specialists.",
-      number: "+75% Winning guarantee ",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
-    },
-    {
-      name: "Every aspect of your case is protected and hyper-secure, with levels of access and confidentiality of the highest priority.",
-      number: "Secure management",
-      icon: "/assets/Icon/gridicons_location.svg",
-    },
-    {
-      name: "Our helpline is closely monitored and we offer live chat and social media customer service 24 hours a day, 7 days a week, 365 days a year.",
-      number: "Full time support",
-      icon: "/assets/Icon/bx_bxs-server.svg",
-    },
-  ],
-}) => {
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
+import React from 'react'
+import Image  from 'next/image';
+export default  function About() {
   return (
-    <div
-      className="
-    mt-0
-    pt-14
-    bg-no-repeat bg-cover bg-center
-		bg-[url('../public/bg-sm.webp')]
-		xl:bg-[url('../public/bg.webp')]
-    h-100 max-h-full
-    "
-      id="about"
-    >
-      <ScrollAnimationWrapper
-      
-      style={{
-        borderRadius: "3px",
-        backgroundColor: "hsla(290,60%,70%,0.1)"
-      }}
-      >
-        <motion.div
-          variants={scrollAnimation}>
-          <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10 
-          
-    pt-14
-          ">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white  font-bold italic leading-tight">Welcome to</h1>
-            <br />
+    <div className="relative w-full h-full bg-gray-200 overflow-hidden">
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white  font-bold italic leading-tight">Emso and Co Solicitors</h1>
-          </div>
-                      <div className="flex justify-center items-center">
-              <button className="hover:bg-white hover:text-indigo-600 lg:text-xl hover:border-indigo-600 ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700 focus:ring-white hover:bg-indigo-700-800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm">Contact us today</button>
-            </div>
-        </motion.div>
-      </ScrollAnimationWrapper>
-      <div 
-      style={{
-        borderRadius: "3px",
-        backgroundColor: "hsla(290,60%,70%,0.1)"
-      }}
-      className="relative w-full flex"
-      >
-        <div 
-        className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 text-white z-10"
-          >
-          {listUser.map((listUsers, index) => (
-            <div
-              className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-2 sm:w-auto mx-auto sm:mx-0"
-              key={index}
-            >
-              <div 
-              className="flex "
-              >
-                <div 
-                className="flex flex-col"
-                >
-                  <p 
-                  className="text-xl text-black-600 font-bold"
-                  >
-                    {listUsers.number}
-                  </p>
-                  <p className="text-lg text-black-500">{listUsers.name}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div >
+      <div className="absolute w-full h-full bg-black">
+            <Image
+              priority="quality"
+        src="/box-bg-image1.webp" 
+              alt="image slide1"
+              width={1500}
+              height={1500}
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              className="absolute  absolute-right-28 w-full h-full object-cove r"
+            />
       </div>
+
+      {/* :HERO CONTAINER */}
+      <div className="relative py-10 xl:py-20 px-5 w-full sm:w-2/3 h-full flex flex-col justify-center items-center bg-white bg-opacity-90">
+
+        {/* ::Top Title */}
+
+        {/* ::Title => W O R K */}
+        <div className="pb-7 sm:pb-14 xl:pb-20 max-w-sm sm:max-w-xl xl:max-w-2xl w-full flex flex-col items-center overflow-hidden" style={{ textShadow: "2px 2px 5px rgba(86,90,88,0.85)" }}>
+
+          {/* :::W O */}
+          <span className="relative w-full text-7xl sm:text-8xl md:text-9xl xl:text-10xl font-semibold flex justify-around">
+            {/* Line through */}
+            <span className="absolute top-1/2 w-5/6 h-3 md:h-6 bg-yellow-700 bg-opacity-80 shadow-lg transform -translate-x-full animate-linethrough" />
+            {/* Shadow W and O */}
+            <span className="absolute hidden md:block -bottom-8 left-40 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
+            <span className="absolute hidden md:block -bottom-8 right-10 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
+          </span>
+
+          {/* :::R K */}
+          <span className="relative w-full text-7xl sm:text-8xl md:text-9xl xl:text-10xl font-semibold flex justify-around">
+            <span>35</span>
+            {/* Line through */}
+            <span className="absolute top-1/2 w-5/6 h-3 md:h-6 bg-yellow-700 bg-opacity-80 shadow-lg transform translate-x-full animate-linethrough" />
+            {/* Shadow R and K */}
+            <span className="absolute hidden md:block -bottom-8 left-40 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
+            <span className="absolute hidden md:block -bottom-8 right-10 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
+          </span>
+        <h2 className="mt-14 text-center text-base sm:text-lg text-gray-800 font-newsreader font-medium uppercase tracking-extra"><span className="text-3xl">y</span>ears<span className="text-3xl"></span> of <span className="text-3xl">p</span>racticing</h2>
+
+        </div>
+
+        {/* ::Bottom title and text */}
+        <div className="w-3/4 flex flex-col md:flex-row">
+          {/* :::Title */}
+          <h3 className="sm:px-5 text-center md:text-right text-lg text-gray-800 font-newsreader font-normal uppercase tracking-widest"><span className="text-3xl">A</span>bout <span className="text-3xl">U</span>s</h3>
+          {/* :::Text */}
+          <p className="sm:px-5 text-center md:text-left font-light leading-relaxed">
+            
+            
+            
+We are an internationally recognised law firm based in London with a long-standing presence in Europe and Africa.
+
+<br />
+Our team offers a wide range of expertise to support our business and private clients in all areas of law, when it matters most.
+
+<br />
+Our aim is to provide cost-effective legal expertise, with an exceptional level of service, and a genuine solution tailored to your individual, personal and business needs.
+            
+            
+            </p>
+        </div>
+
+      </div>
+
     </div>
   );
-};
+}
 
 
 
 
-export default Hero;
+
+
+

@@ -1,93 +1,84 @@
-import React, { useMemo, useRef, useState } from "react";
-import { motion, Variants, HTMLMotionProps } from "framer-motion";
 
+import React from 'react'
+import Image  from 'next/image';
+export default  function Section1() {
+  return (
+    <div className="relative w-full h-full bg-gray-200 overflow-hidden">
 
-const WavyText = ({
-    text,
-    delay = 0,
-    duration = 0.05,
-    replay,
-    ...props
-}) => {
-    const letters = Array.from(text);
+      <div className="absolute w-full h-full bg-black">
+            <Image
+              priority="quality"
+        src="/box-bg-image1.webp" 
+              alt="image slide1"
+              width={1500}
+              height={1500}
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              className="absolute  absolute-right-28 w-full h-full object-cove r"
+            />
+      </div>
 
-    const container = {
-        hidden: {
-            opacity: 0
-        },
-        visible: (i = 1) => ({
-            opacity: 1,
-            transition: { staggerChildren: duration, delayChildren: i * delay, }
-        })
-    };
+      {/* :HERO CONTAINER */}
+      <div className="relative py-10 xl:py-20 px-5 w-full sm:w-2/3 h-full flex flex-col justify-center items-center bg-white bg-opacity-90">
 
+        {/* ::Top Title */}
 
-    const child = {
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                repeat: "Infinity",
-                duration: 5,
-                type: "spring",
-                damping: 12,
-                stiffness: 200
-            }
-        },
-        hidden: {
-            opacity: 0,
-            y: 20,
-            transition: {
-                repeat: "Infinity",
-                duration: 5,
-                type: "spring",
-                damping: 12,
-                stiffness: 200
-            }
-        }
-    };
-    return (
-        <motion.h1
-            style={{
-                display: "flex",
-                overflow: "hidden",
-                color: "#fff",
-                fontSize: 40,
-            }}
-            variants={container}
-            initial="hidden"
-            animate={replay ? "visible" : "hidden"}
-            {...props}
-        >
-            {letters.map((letter, index) => (
-                <motion.span key={index} variants={child}>
-                    {letter === " " ? "\u00A0" : letter}
-                </motion.span>
-            ))}
-        </motion.h1>
-    );
-};
+        {/* ::Title => W O R K */}
+        <div className="pb-7 sm:pb-14 xl:pb-20 max-w-sm sm:max-w-xl xl:max-w-2xl w-full flex flex-col items-center overflow-hidden" style={{ textShadow: "2px 2px 5px rgba(86,90,88,0.85)" }}>
 
+          {/* :::W O */}
+          <span className="relative w-full text-7xl sm:text-8xl md:text-9xl xl:text-10xl font-semibold flex justify-around">
+            {/* Line through */}
+            <span className="absolute top-1/2 w-5/6 h-3 md:h-6 bg-yellow-700 bg-opacity-80 shadow-lg transform -translate-x-full animate-linethrough" />
+            {/* Shadow W and O */}
+            <span className="absolute hidden md:block -bottom-8 left-40 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
+            <span className="absolute hidden md:block -bottom-8 right-10 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
+          </span>
 
-export default function AnimaText() {
-    const [replay, setReplay] = useState(true);
-    return (
-        <div className="anima-text">
-            <div className="main-text">
-                <WavyText text="We are by your side wherever you are.'" replay={replay} />
-            </div>
-            <style jsx>{`
-    .anima-text{
-  background: #000
-    }
-    .anima-text{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-    }
-    `}</style>
+          {/* :::R K */}
+          <span className="relative w-full text-7xl sm:text-8xl md:text-9xl xl:text-10xl font-semibold flex justify-around">
+            <span>35</span>
+            {/* Line through */}
+            <span className="absolute top-1/2 w-5/6 h-3 md:h-6 bg-yellow-700 bg-opacity-80 shadow-lg transform translate-x-full animate-linethrough" />
+            {/* Shadow R and K */}
+            <span className="absolute hidden md:block -bottom-8 left-40 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
+            <span className="absolute hidden md:block -bottom-8 right-10 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
+          </span>
+        <h2 className="mt-14 text-center text-base sm:text-lg text-gray-800 font-newsreader font-medium uppercase tracking-extra"><span className="text-3xl">y</span>ears<span className="text-3xl"></span> of <span className="text-3xl">p</span>racticing</h2>
+
         </div>
-    );
+
+        {/* ::Bottom title and text */}
+        <div className="w-3/4 flex flex-col md:flex-row">
+          {/* :::Title */}
+          <h3 className="sm:px-5 text-center md:text-right text-lg text-gray-800 font-newsreader font-normal uppercase tracking-widest"><span className="text-3xl">A</span>bout <span className="text-3xl">U</span>s</h3>
+          {/* :::Text */}
+          <p className="sm:px-5 text-center md:text-left font-light leading-relaxed">
+            
+            
+            
+            We are an internationally recognised law firm based in London with a long-standing presence in Europe and Africa
+
+<br />
+Our team offers a wide range of expertise to support our business and private clients in all areas of law, when it matters most.
+
+<br />
+Our aim is to provide cost-effective legal expertise, with an exceptional level of service, and a genuine solution tailored to your individual, personal and business needs.
+            
+            
+            </p>
+        </div>
+
+      </div>
+
+    </div>
+  );
 }
+
+
+
+
+
+
+

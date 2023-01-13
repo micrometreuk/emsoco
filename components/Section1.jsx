@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-export default  function Hero1() {
+export default  function Section1() {
   return (
     <div className="relative w-full h-full bg-gray-200 overflow-hidden">
 

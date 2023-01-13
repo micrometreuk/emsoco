@@ -38,7 +38,7 @@ export function HeroAnima2() {
 function Hero2() {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent   tracking-wide antialiased  text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
+      <div className="flex flex-col justify-center items-center mt-14 bg-cover bg-clip-text bg-center text-transparent   tracking-wide antialiased  text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
           <Textra effect='press'
             duration={3000}

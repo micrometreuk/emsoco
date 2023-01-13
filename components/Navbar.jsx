@@ -20,7 +20,7 @@ export default function NavBar() {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className="bg-white   dark:bg-gray-50 "
+        <div className="bg-white  "
             style={{
                 fontSize: "1.1em",
                 zIndex: 1030,

@@ -26,7 +26,7 @@ export function HeroAnima1() {
 export function HeroAnima2() {
   return (
       <div className="flex flex-col justify-center items-center mt-2 bg-cover bg-clip-text bg-center text-transparent  tracking-wide antialiased  " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
-        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center ">
+        <h3 className="text-2l sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center ">
           We are helping hands 
           whenever you are in trouble
         </h3>
@@ -41,7 +41,7 @@ function Hero1() {
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
           <Textra effect='press'
             duration={3000}
-            data={['We are by your side wherever you are.',]} 
+            data={['We are trully global',]} 
             />
         </h1>
       </div>
@@ -52,11 +52,11 @@ function Hero1() {
 function Hero2() {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mt-14 bg-cover bg-clip-text bg-center text-transparent   tracking-wide antialiased  text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
+      <div className="flex flex-col justify-center items-center mt-16 mb-10 bg-cover bg-clip-text bg-center text-transparent   tracking-wide antialiased  text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
+        <h1 className="text-2l sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
           <Textra effect='press'
             duration={3000}
-            data={['We are trully global',]} 
+            data={['We are by your side wherever you are',]} 
             />
         </h1>
       </div>

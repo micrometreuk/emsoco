@@ -39,7 +39,7 @@ const Hero = ({
       className="relative w-full flex"
       >
         <div 
-        className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500  z-10"
+        className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-3 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500  z-10"
           >
           {listUser.map((listUsers, index) => (
             <div

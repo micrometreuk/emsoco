@@ -9,7 +9,7 @@ export function HeroAnima1() {
   return (
     <>
       <div className="flex flex-col justify-center items-center mt-16 bg-cover bg-clip-text bg-center text-transparent  font-extrabold tracking-wide antialiased text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center   font-bold italic leading-tight">
+        <h1 className="mt-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center   font-bold italic leading-tight">
         Welcome to Emso and Co
         <br />
         Emso and Co Solicitors
@@ -34,6 +34,20 @@ export function HeroAnima2() {
   );
 }
 
+function Hero1() {
+  return (
+    <div>
+      <div className="flex flex-col justify-center items-center mt-14 bg-cover bg-clip-text bg-center text-transparent   tracking-wide antialiased  text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
+          <Textra effect='press'
+            duration={3000}
+            data={['We are by your side wherever you are.',]} 
+            />
+        </h1>
+      </div>
+    </div>
+  );
+}
 
 function Hero2() {
   return (
@@ -42,7 +56,7 @@ function Hero2() {
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
           <Textra effect='press'
             duration={3000}
-            data={['We are by your side wherever you are.',]} 
+            data={['We are trully global',]} 
             />
         </h1>
       </div>
@@ -68,15 +82,16 @@ export default function Landing() {
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
           }}>
-          <SwiperSlide className="mbg-no-repeat bg-cover bg-center	bg-[url('../public/bg-sm.webp')] xl:bg-[url('../public/bg.webp')] " >
-            <div className="pt-20 container h-half">
+          <SwiperSlide className="mbg-no-repeat bg-cover bg-center	bg-[url('../public/bg-sm.webp')] xl:bg-[url('../public/bg.webp')]" >
+            <div className="pt-90 container h-full">
               <HeroAnima1 />
+              <Hero1 />
             </div>
           </SwiperSlide>
-          <SwiperSlide className="bg-no-repeat bg-cover bg-center	bg-[url('../public/bg-slider1-layer2.webp')] xl:bg-[url('../public/bg-slider1-layer2.webp')] h-100 max-h-full">
-            <div className="pt-80 container h-half">
-              <HeroAnima2 />
+          <SwiperSlide className="bg-no-repeat bg-cover bg-center	bg-[url('../public/bg-slider1-layer2.webp')] xl:bg-[url('../public/bg-slider1-layer2.webp')]">
+            <div className="pt-80 container h-full ">
               <Hero2 />
+              <HeroAnima2 />
             </div>
           </SwiperSlide>
         </Swiper>

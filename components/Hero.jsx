@@ -28,13 +28,9 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="mt-0 pt-2  relative w-full h-full bg-yellow-800 bg-opacity-10 ">
+    <div className="mt-0 pt-0  relative w-full h-full bg-yellow-800 bg-opacity-10 ">
       <ScrollAnimationWrapper>
         <motion.div variants={scrollAnimation}>
-          <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10 pt-14">
-          </div>
-          <div className="flex justify-center items-center">
-          </div>
       <div 
       style={{
         borderRadius: "3px",

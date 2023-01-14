@@ -68,13 +68,13 @@ export default function Landing() {
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
           }}>
-          <SwiperSlide className="mbg-no-repeat bg-cover bg-center	bg-[url('../public/bg-sm.webp')] xl:bg-[url('../public/bg.webp')] h-100 max-h-full " >
-            <div className="pt-20 container h-screen ">
+          <SwiperSlide className="mbg-no-repeat bg-cover bg-center	bg-[url('../public/bg-sm.webp')] xl:bg-[url('../public/bg.webp')] " >
+            <div className="pt-20 container h-half">
               <HeroAnima1 />
             </div>
           </SwiperSlide>
           <SwiperSlide className="bg-no-repeat bg-cover bg-center	bg-[url('../public/bg-slider1-layer2.webp')] xl:bg-[url('../public/bg-slider1-layer2.webp')] h-100 max-h-full">
-            <div className="pt-80 container h-screen">
+            <div className="pt-80 container h-half">
               <HeroAnima2 />
               <Hero2 />
             </div>

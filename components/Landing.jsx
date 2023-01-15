@@ -109,7 +109,6 @@ export default function Landing() {
                 }
 
                 body {
-                    background: #eee;
                     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
                     color: #000;
                     margin: 0;

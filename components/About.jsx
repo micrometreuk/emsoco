@@ -34,11 +34,20 @@ export default function About() {
             <span className="absolute hidden md:block -bottom-8 left-40 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
             <span className="absolute hidden md:block -bottom-8 right-10 w-16 md:w-32 h-32 bg-gray-800 bg-opacity-20 filter blur-xl" />
           </span>
-          <h2 className="mt-14 text-center text-base sm:text-lg text-gray-800 font-newsreader font-medium uppercase tracking-extra">
+          <h1 className="mt-2 text-center text-base sm:text-lg text-gray-800 font-newsreader font-medium uppercase tracking-extra">
             <span className="text-3xl">y</span>ears
             <span className="text-3xl"></span> of{" "}
             <span className="text-3xl">p</span>racticing
-          </h2>
+          </h1>
+        </div>
+        <div className="mx-5 md:mx-0 p-8  md:rounded-r-none ">
+          <h3 className="text-3xl sm:text-2xl font-josefin font-extrabold">We are here to fight your <br/>
+          <span className="text-yellow-400 text-opacity-80 p-2">corner</span> 
+          <span>
+
+          all the way
+          </span>
+          </h3>
         </div>
 
         <div className="w-3/4 flex flex-col md:flex-row">
@@ -59,65 +68,6 @@ export default function About() {
             exceptional level of service, and a genuine solution tailored to
             your individual, personal and business needs.
           </p>
-        </div>
-        <div className="overflow-y-hidden">
-          <div className="xl:mx-auto xl:container  xl:px-0 md:px-0 px-0 py-1">
-            <div className="lg:flex items-center justify-center lg:space-x-12 2xl:space-x-6">
-              <div className>
-                <div className="mt-6 md:mt-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 lg:mt-6 2xl:mt-12">
-                  <div className="flex items-center">
-                    <div className="w-16 h-16 relative">
-                      <div className=" flex-shrink-0 z-20  w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                        &rarr;
-                      </div>
-                    </div>
-                    <div className="flex items-start flex-col ml-6 pt-8">
-                      <h2 className="text-lg font-semibold leading-4 text-gray-800">
-                        Commitment to excellence <br />
-                        through expertise and care
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-16 h-16 relative">
-                      <div className=" flex-shrink-0 z-20  w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                        &rarr;
-                      </div>
-                    </div>
-                    <div className="flex items-start flex-col ml-6 pt-8">
-                      <h2 className="text-lg font-semibold leading-4 text-gray-800">
-                        Pro-active, professional and forward-thinking
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-16 h-16 relative">
-                      <div className=" flex-shrink-0 z-20  w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                        &rarr;
-                      </div>
-                    </div>
-                    <div className="flex items-start flex-col ml-6 pt-8">
-                      <h2 className="text-lg font-semibold leading-4 text-gray-800">
-                        Offices in London and Paris
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-16 h-16 relative">
-                      <div className=" flex-shrink-0 z-20  w-16 h-16 flex items-center justify-center mt-2 mr-3">
-                        &rarr;
-                      </div>
-                    </div>
-                    <div className="flex items-start flex-col ml-6 pt-8">
-                      <h2 className="text-lg font-semibold leading-4 text-gray-800">
-                        Free assessment of your case and competitive rates
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

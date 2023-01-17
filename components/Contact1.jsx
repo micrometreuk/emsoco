@@ -31,14 +31,14 @@ export default function Contact1() {
                 </label>
                 <input
                   type="text"
-                  className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  className="border-0 px-3 py-3 placeholder-gray-400 text-gray-100 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                   placeholder="Last Name"
                   style={{ transition: "all .15s ease" }} />
               </div>
 
               <div className="relative w-full mb-3">
                 <label
-                  className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase text-gray-100 text-xs font-bold mb-2"
                   htmlFor="email"
                 >
                   Email
@@ -52,7 +52,7 @@ export default function Contact1() {
 
               <div className="relative w-full mb-3">
                 <label
-                  className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase text-gray-100 text-xs font-bold mb-2"
                   htmlFor="message"
                 >
                   Message

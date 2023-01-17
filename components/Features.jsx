@@ -20,7 +20,7 @@ export default function Features() {
                         <div className="col-span-full sm:col-span-2 lg:col-span-1 flex">
                             <div  className="flex-shrink-0 mr-2 w-8 h-8 text-green-600" />&rarr;
                             <div className="inline-flex flex-col space-y-3">
-                                <dd className="text-gray-600 font-semibold">{feature.description}</dd>
+                                <div className="text-gray-600 font-semibold">{feature.description}</div>
                             </div>
                         </div>
                     ))}

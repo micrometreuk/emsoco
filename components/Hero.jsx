@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 
 
-export default function Landing() {
+export default function Hero() {
   return (
     <>
       <main>

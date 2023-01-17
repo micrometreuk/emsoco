@@ -6,7 +6,9 @@ export default function Services1() {
   return (
     <section>
       <div style={{ minHeight: "100vh" }}>
-        <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{ backgroundImage: "url('/bg-parallax1-1.webp')" }}>
+        <div className="top-0 w-full h-full bg-center bg-cover" 
+        style={{ backgroundImage: "url('/bg-parallax1-1.webp')" }}
+        >
           <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
           <div className="relative w-full flex flex-col lg:flex-row justify-center items-center">
             <dl className="flex-grow-0  grid grid-cols-6 gap-12 text-white">

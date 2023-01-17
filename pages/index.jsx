@@ -7,6 +7,7 @@ import Features from "../components/Features";
 import Contact1 from "../components/Contact1";
 import Services1 from "../components/Services1";
 import ServicesTitle from "../components/ServicesTitle";
+import FunFacts from "../components/FunFacts";
 export default function Home() {
   return (
     <Layout>
@@ -16,6 +17,7 @@ export default function Home() {
       <PromoSection/>
       <ServicesTitle/>
       <Services1/>
+      <FunFacts/>
       <Contact1/>
     </Layout>
   );

@@ -6,6 +6,7 @@ import PromoSection from "../components/PromoSection";
 import Features from "../components/Features";
 import Contact1 from "../components/Contact1";
 import Services1 from "../components/Services1";
+import ServicesTitle from "../components/ServicesTitle";
 export default function Home() {
   return (
     <Layout>
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero/>
       <About/>
       <PromoSection/>
+      <ServicesTitle/>
       <Services1/>
       <Contact1/>
     </Layout>

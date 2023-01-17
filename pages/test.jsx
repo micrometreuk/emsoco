@@ -1,82 +1,76 @@
-import Image from 'next/image'
+
+import React from 'react'
+import { AcademicCapIcon, BadgeCheckIcon, TrendingUpIcon, UserGroupIcon } from '@heroicons/react/outline'
 
 
+const Features5 = () => {
+  return (
+      <section className="">
+        <div className="relative pt-16 pb-32 flex content-center items-center justify-center" style={{ minHeight: "75vh" }}>
+          <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{ backgroundImage: "url('/bg-parallax1-1.webp')" }}>
+            <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
+              <div className="relative w-full flex flex-col lg:flex-row justify-center items-center">
+                <dl className="flex-grow-0 px-4 grid grid-cols-8 gap-4">
+                  <div className="col-span-full sm:col-span-2 md:col-span-1 lg:col-span-2 mx-auto py-5 px-2.5 w-full max-w-xs flex flex-col justify-center items-center space-y-2 rounded-sm border-2 border-gray-100 sm:border-blue-300 lg:border-gray-100 bg-black bg-opacity-80 text-center">
+                    {/* Icon */}
+                    <span className="w-14 h-14 inline-flex justify-center items-center rounded-full bg-gray-100 sm:bg-blue-300 lg:bg-gray-100">
+                    </span>
+                    {/* Feature name */}
+                    <dt className="lg:text-lg font-rubik font-bold uppercase tracking-widest">Expertise</dt>
+                    {/* Description */}
+                    <dd className="py-2 text-xs lg:text-sm text-gray-50 text-opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eos, fuga aliquid magnam harum quidem doloribus ratione. </dd>
+                  </div>
 
-export default function Contact1() {
-  return <section className="relative block py-24 lg:pt-0 ">
-    <div className="relative pt-16 pb-32 flex content-center items-center justify-center" style={{ minHeight: "75vh" }}>
-      <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{ backgroundImage: "url('/bg-parallax3.webp')" }}>
-      <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
+                  {/* :::Feature 2 -> Leadership */}
+                  <div className="col-span-full sm:col-span-2 md:col-span-1 lg:col-span-2 mx-auto py-5 px-2.5 w-full max-w-xs flex flex-col justify-center items-center space-y-2 rounded-sm border-2 border-blue-300 sm:border-gray-100 lg:border-blue-300 bg-black bg-opacity-80 text-center">
+                    {/* Icon */}
+                    <span className="w-14 h-14 inline-flex justify-center items-center rounded-full bg-blue-300 sm:bg-gray-100 lg:bg-blue-300">
+                    </span>
+                    {/* Feature name */}
+                    <dt className="lg:text-lg font-rubik font-bold uppercase tracking-widest">Leadership</dt>
+                    {/* Description */}
+                    <dd className="py-2 text-xs lg:text-sm text-gray-50 text-opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eos, fuga aliquid magnam harum quidem doloribus ratione. </dd>
+                  </div>
 
-        <div className="w-full lg:w-6/12 px-4">
-          <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg ">
-            <div className="flex-auto p-5 lg:p-10">
-              <div className="relative w-full mb-3 mt-8">
-                <label
-                  className="block uppercase text-gray-100 text-xs font-bold mb-2"
-                  htmlFor="full-name"
-                >
-                  First Name
-                </label>
-                <input
-                  type="text"
-                  className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                  placeholder="First Name"
-                  style={{ transition: "all .15s ease" }} />
-                <label
-                  className="block uppercase text-gray-100 text-xs font-bold mb-2"
-                  htmlFor="full-name"
-                >
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                  placeholder="Last Name"
-                  style={{ transition: "all .15s ease" }} />
-              </div>
+                  {/* :::Feature 3 -> Careers */}
+                  <div className="col-span-full sm:col-span-2 md:col-span-1 lg:col-span-2 mx-auto py-5 px-2.5 w-full max-w-xs flex flex-col justify-center items-center space-y-2 rounded-sm border-2 border-gray-100 md:border-blue-300 bg-black bg-opacity-80 text-center">
+                    {/* Icon */}
+                    <span className="w-14 h-14 inline-flex justify-center items-center rounded-full bg-gray-100 md:bg-blue-300">
+                    </span>
+                    {/* Feature name */}
+                    <dt className="lg:text-lg font-rubik font-bold uppercase tracking-widest">Careers</dt>
+                    {/* Description */}
+                    <dd className="py-2 text-xs lg:text-sm text-gray-50 text-opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eos, fuga aliquid magnam harum quidem doloribus ratione. </dd>
+                  </div>
 
-              <div className="relative w-full mb-3">
-                <label
-                  className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                  placeholder="Email"
-                  style={{ transition: "all .15s ease" }} />
-              </div>
+                  {/* :::Feature 4 -> Partnership */}
+                  <div className="col-span-full sm:col-span-2 md:col-span-1 lg:col-span-2 mx-auto py-5 px-2.5 w-full max-w-xs flex flex-col justify-center items-center space-y-2 rounded-sm border-2 border-blue-300 md:border-gray-100 bg-black bg-opacity-80 text-center">
+                    {/* Icon */}
+                    <span className="w-14 h-14 inline-flex justify-center items-center rounded-full bg-blue-300 md:bg-gray-100">
+                    </span>
+                    {/* Feature name */}
+                    <dt className="lg:text-lg font-rubik font-bold uppercase tracking-widest">Partnership</dt>
+                    {/* Description */}
+                    <dd className="py-2 text-xs lg:text-sm text-gray-50 text-opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eos, fuga aliquid magnam harum quidem doloribus ratione. </dd>
+                  </div>
 
-              <div className="relative w-full mb-3">
-                <label
-                  className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="message"
-                >
-                  Message
-                </label>
-                <textarea
-                  rows={4}
-                  cols={80}
-                  className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                  placeholder="Type a message..." />
-              </div>
-              <div className="text-center mt-6">
-                <button
-                  className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                  style={{ transition: "all .15s ease" }}
-                >
-                  Send Message
-                </button>
+                  <div className="col-span-full sm:col-span-2 md:col-span-1 lg:col-span-2 mx-auto py-5 px-2.5 w-full max-w-xs flex flex-col justify-center items-center space-y-2 rounded-sm border-2 border-blue-300 md:border-gray-100 bg-black bg-opacity-80 text-center">
+                    {/* Icon */}
+                    <span className="w-14 h-14 inline-flex justify-center items-center rounded-full bg-blue-300 md:bg-gray-100">
+                    </span>
+                    {/* Feature name */}
+                    <dt className="lg:text-lg font-rubik font-bold uppercase tracking-widest">Partnership</dt>
+                    {/* Description */}
+                    <dd className="py-2 text-xs lg:text-sm text-gray-50 text-opacity-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eos, fuga aliquid magnam harum quidem doloribus ratione. </dd>
+                  </div>
+
+
+                </dl>
               </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+  )
 }
 
+export default Features5

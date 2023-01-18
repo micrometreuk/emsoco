@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function About() {
   return (
-    <div className="relative w-full h-full bg-gray-200 overflow-hidden">
+    <div className="relative w-full h-full bg-gray-200 overflow-hidden" id="about">
       <div className="absolute w-full h-full bg-black">
         <Image
           priority="quality"

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 
 export default function Contact1() {
-  return <section className="relative block py-24 lg:pt-0 ">
+  return <section className="relative block py-24 lg:pt-0 " id='contact'>
     <div className="relative pt-16 pb-32 flex content-center items-center justify-center" style={{ minHeight: "75vh" }}>
       <div className="absolute top-0 w-full h-full bg-center bg-cover" style={{ backgroundImage: "url('/bg-parallax3.webp')" }}>
       <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>

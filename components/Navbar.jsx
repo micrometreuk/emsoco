@@ -6,9 +6,9 @@ import ThemeToggler from './ThemeToggler'
 const navigation = {
     pages: [
         { name: 'Home', href: '/' },
-        { name: 'About', href: '/' },
-        { name: 'Services', href: '/' },
-        { name: 'Contact', href: '/' },
+        { name: 'About', href: '/#about' },
+        { name: 'Services', href: '/#services-title' },
+        { name: 'Contact', href: '/#contact' },
     ],
 }
 
@@ -105,7 +105,7 @@ export default function NavBar() {
                             {/* Logo */}
                             <div className="ml-4 flex lg:ml-0  font-extrabold	">
                                 <span className=" bg-gray-200" aria-hidden="true" />
-                                <a href="#" className="flex items-center text-gray-700 hover:text-gray-800">
+                                <a href="/" className="flex items-center text-gray-700 hover:text-gray-800">
                                     <Image
                                         className=" focus:ring-indigo-500 h-8 w-auto"
                                         src="/logo-bg.webp"

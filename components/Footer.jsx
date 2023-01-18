@@ -103,22 +103,22 @@ PO Box 79106, London, SE26 9FD
                 <ul className="list-unstyled">
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">Code of Practice
+                    href="/">Code of Practice
                   </a>
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms">Complaint Policy
+                        href="/">Complaint Policy
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy">Diversity Policy
+                        href="/">Diversity Policy
                     </a>
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us">Pricing Policy
+                        href="/">Pricing Policy
                     </a>
                   </li>
                   <li>
@@ -128,7 +128,7 @@ PO Box 79106, London, SE26 9FD
                   </li>
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us">Fees
+                        href="/">Fees
                     </a>
                   </li>
                 </ul>
@@ -143,7 +143,7 @@ PO Box 79106, London, SE26 9FD
             <div className="text-sm text-gray-600 font-semibold py-1">
               Copyright © {new Date().getFullYear()}{" "}emsoandcosolicitors.com{" "}
               <a
-                href="https://www.creative-tim.com"
+                href="/"
                 className="text-gray-600 hover:text-gray-900"
               >
               </a>

@@ -1,13 +1,13 @@
 
 import React from 'react'
-
+import CountUp from 'react-countup';
 
 export default function FunFacts() {
     return (
         <div className="relative w-full h-full flex flex-col justify-center ite1ms-center bg-gray-50 overflow-hidden">
 
             <div className="pt-2 sm:pt-2 lg:pt-4 w-full flex flex-col lg:flex-row">
-                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-gray-600"> {/* Container */}
+                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-gray-600">
                     <div className="p-5 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
                         <h1 className="py-10 text-3xl sm:text-5xl font-light tracking-wide leading-tight">
                             We are immensily proud of our achievements
@@ -31,51 +31,69 @@ export default function FunFacts() {
                     </h1>
                 </div>
             </div>
-                <ProductSuggestion6/>
+            <Faqs2 />
         </div>
     )
 }
 
 
-
-
-function ProductSuggestion6() {
-
-    const products = [
-        {
-            id: 1,
-            href: "#link",
-            name: "185+\n Completed works",
-        },
-        {
-            id: 2,
-            href: "#link",
-            name: "132+\n Satisfied clients",
-        },
-        {
-            id: 3,
-            href: "#link",
-            name: "+5 Spoken languages",
-        },
-        {
-            id: 4,
-            href: "#link",
-            name: "+2Offices abroad",
-        },
-    ]
-
+export function Faqs2() {
     return (
-            <div className="mx-auto max-w-sm sm:max-w-2xl lg:max-w-none  px-0 w-full">
-                <div className="mt-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-x-5">
-                    {products.map(product => (
-                        <div key={product.id} className="col-span-1 relative py-10 px-10 shadow-sm rounded border   bg-yellow-500 border-gray-200  overflow-hidden hover:shadow-lg">
-                            <div className="relative z-10 flex flex-col items-start space-y-1">
-                                <h3 className="text-base lg:text-lg text-white font-bold">{product.name}</h3>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-        </div>
-    )
-}
+        <div>
+            <div className=" lg:px-2 md:px-6 px-4 ">
+                <div className="w-full flex flex-col justify-center items-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3 xl:grid-cols-4 justify-items-around gap-x-6 gap-y-6 xl:gap-y-0 xl:gap-x-8 mt-10">
+                        <button className="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-yellow-800 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6">
+                            <p className="text-xl font-extrabold leading-5 text-gray-200">
+                                <span>
+                                    <CountUp
+                                        end={185}
+                                    />
+                                    +
+                                    <br />
+                                    Completed works
+                                </span>
+                            </p>
+                        </button>
+                        <button className="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-900 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6">
+                            <p className="text-xl font-extrabold leading-5 text-gray-200">
 
+                                <span>
+                                    +
+                                    <CountUp
+                                        end={132}
+                                    />
+                                    <br />
+                                    Satisfied clients
+                                </span>
+                            </p>
+                        </button>
+                        <button className="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-yellow-800 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6">
+                            <p className="text-xl font-extrabold leading-5 text-gray-200">
+
+                            <span>
+                                +
+                                <CountUp end={5} />
+                                <br />
+                                Spoken languages
+                            </span>
+                            </p>
+                        </button>
+                        <button className="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-900 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6">
+                            <p className="text-xl font-extrabold leading-5 text-gray-200">
+
+
+                            <span>
+                                +
+                                <CountUp end={2} />
+                                <br />
+                                Offices abroad
+                            </span>
+                            </p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}

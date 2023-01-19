@@ -17,24 +17,21 @@ export default function Home() {
       <Landing />
       <div className="flex justify-center items-center bg-black"
         style={{
-          cursor: "pointer",
-          fontSize: "1.1em",
           zIndex: 1030,
           position: "fixed",
           top: 450,
           right: 0,
           left: 0,
-          marginTop: "3.1rem",
         }}
 
       >
         <div className="toast toast-end toast-middle">
 
           <div className="alert alert-success">
-            <FaWhatsapp />
             <Link href="tel:07951867712">
-              <a className="flex items-center justify-center gap-2">
-                <span>How can we help ?</span>
+              <a >
+            <FaWhatsapp />
+                  How can we help ?
               </a>
             </Link>
           </div>

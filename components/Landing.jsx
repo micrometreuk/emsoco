@@ -85,16 +85,20 @@ export default function Landing() {
           style={{
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
+            minHeight: "100vh" ,
           }}>
-          <SwiperSlide className="mbg-no-repeat bg-cover bg-center	bg-[url('../public/bg-sm.webp')] xl:bg-[url('../public/bg.webp')]" 
-           style={{ minHeight: "98vh" }}>
+          <SwiperSlide 
+          className="top-0 w-full h-full bg-center bg-cover" 
+          style={{ backgroundImage: "url('/bg.webp')" , minHeight: "98vh" }}
+           
+           >
           
             <div className="pt-90 container h-full">
               <HeroAnima1 />
               <HeroAnima2 />
             </div>
           </SwiperSlide>
-          <SwiperSlide className="bg-no-repeat bg-cover bg-center	bg-[url('../public/bg-slider1-layer2.webp')] xl:bg-[url('../public/bg-slider1-layer2.webp')]">
+          <SwiperSlide className="bg-no-repeat bg-cover bg-center	bg-[url('../public/bg-slider1-layer2.webp')]">
             <div className="pt-80 container h-full "
              style={{ minHeight: "98vh" }}>
               <Hero1 />

@@ -2,7 +2,7 @@ import React, { useMemo, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Parallax, Pagination, Navigation, Autoplay, Zoom } from "swiper";
 import Textra from 'react-textra'
-
+import Link from "next/link";
 
 export function HeroAnima1() {
   const [replay, setReplay] = useState(true);
@@ -16,7 +16,11 @@ export function HeroAnima1() {
         </h1>
       </div>
       <div className="flex justify-center items-center">
+      <Link href="tel:07951867712">
+        <a  className="flex items-center justify-center gap-2">
         <button className="hover:bg-white hover:text-indigo-600 lg:text-xl hover:border-indigo-600 ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700 focus:ring-white hover:bg-indigo-700-800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm">Contact us today</button>
+        </a>
+        </Link>
       </div>
     </>
   );
@@ -55,7 +59,7 @@ function Hero2() {
       <div className="flex flex-col justify-center items-center mt-16 mb-10 bg-cover bg-clip-text bg-center text-transparent   tracking-wide antialiased  text-center italic leading-tight " style={{ backgroundImage: "url(https://media.giphy.com/media/l378wcSfS7eXWQgla/giphy.gif)" }}>
         <h1 className="text-2l sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold italic leading-tight">
           <Textra effect='press'
-            duration={3000}
+            duration={3500}
             data={['We are by your side wherever you are',]} 
             />
         </h1>
@@ -77,21 +81,24 @@ export default function Landing() {
   return (
     <div className="swiper-container">
       <div className="swiper-main">
-        <Swiper centeredSlides={true} spaceBetween={30} effect={"fade"} loop={true} zoom={{ maxRatio: 6 }} autoplay={{ delay: 3000, disableOnInteraction: false, }} speed={6000} navigation={false} modules={[EffectFade, Autoplay, Pagination, Navigation, Zoom]} className="mainSwiper"
+        <Swiper centeredSlides={true} spaceBetween={30} effect={"fade"} loop={true} zoom={{ maxRatio: 6 }} autoplay={{ delay: 3500, disableOnInteraction: false, }} speed={6000} navigation={false} modules={[EffectFade, Autoplay, Pagination, Navigation, Zoom]} className="mainSwiper"
           style={{
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
           }}>
-          <SwiperSlide className="mbg-no-repeat bg-cover bg-center	bg-[url('../public/bg-sm.webp')] xl:bg-[url('../public/bg.webp')]" >
+          <SwiperSlide className="mbg-no-repeat bg-cover bg-center	bg-[url('../public/bg-sm.webp')] xl:bg-[url('../public/bg.webp')]" 
+           style={{ minHeight: "98vh" }}>
+          
             <div className="pt-90 container h-full">
               <HeroAnima1 />
-              <Hero1 />
+              <HeroAnima2 />
             </div>
           </SwiperSlide>
           <SwiperSlide className="bg-no-repeat bg-cover bg-center	bg-[url('../public/bg-slider1-layer2.webp')] xl:bg-[url('../public/bg-slider1-layer2.webp')]">
-            <div className="pt-80 container h-full ">
+            <div className="pt-80 container h-full "
+             style={{ minHeight: "98vh" }}>
+              <Hero1 />
               <Hero2 />
-              <HeroAnima2 />
             </div>
           </SwiperSlide>
         </Swiper>

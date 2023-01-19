@@ -19,13 +19,14 @@ export default function Home() {
         style={{
           zIndex: 1030,
           position: "fixed",
-          top: 450,
+          top: 590,
           right: 0,
           left: 0,
         }}
 
       >
-        <div className="toast toast-end toast-middle">
+        <div className="toast toast-end">
+
 
           <div className="alert alert-success">
             <Link href="tel:07951867712">
